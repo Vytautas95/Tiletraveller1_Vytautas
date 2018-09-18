@@ -1,3 +1,4 @@
+#The algorithm
 #1.  Player moves to some direction
 #2.  If the direction is a closed wall player stays on same tile and repeats step 1.
 #3.  If the direction was valid move to the corresponding tile
@@ -21,7 +22,7 @@ while position != 31:
     if validpos == "n":
         print("You can travel: (N)orth.")
     elif validpos == "nes":
-        print("You can travel: (N)orth or (E)east or (S)outh.")
+        print("You can travel: (N)orth or (E)ast or (S)outh.")
     elif validpos == "es":
         print("You can travel: (E)ast or (S)outh.")
     elif validpos == "sw":
