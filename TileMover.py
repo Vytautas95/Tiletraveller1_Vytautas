@@ -6,17 +6,17 @@
 
 position = 11
 while position != 31:
-    if position == 11 or position ==21:
+    if position == 11 or position == 21:
         validpos = "n"
     elif position == 12:
         validpos = "nes"
     elif position == 13:
         validpos = "es"
-    elif position == 22 or position == 33
+    elif position == 22 or position == 33:
         validpos = "sw"
-    elif position = 23:
+    elif position == 23:
         validpos = "ew"
-    elif position = 32:
+    elif position == 32:
         validpos = "ns"
     if validpos == "n":
         print("You can travel: (N)orth.")
@@ -32,17 +32,17 @@ while position != 31:
         print("You can travel: (N)orth or (S)outh.")
     direction = input("Direction: ")
     while direction.lower() not in validpos:
-        if direction.lower() in validpos:
-            if direction.lower() == "n":
-                position += 1
-            elif direction.lower() == "s":
-                position -= 1
-            elif direction.lower() == "e":
-                position += 10
-            else:
-                position -= 10
+        print("Not a valid direction!")
+        direction = input("Direction: ")
+    if direction.lower() in validpos:
+        if direction.lower() == "n":
+            position += 1
+        elif direction.lower() == "s":
+            position -= 1
+        elif direction.lower() == "e":
+            position += 10
         else:
-            print("Not a valid direction!")
+            position -= 10
 print("Victory!")
 
 
