@@ -36,6 +36,7 @@ while position != 31:
     while direction not in validpos:
         print("Not a valid direction!")
         direction = input("Direction: ")
+        direction = direction.lower()
     if direction in validpos:
         if direction == "n":
             position += 1
