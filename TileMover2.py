@@ -6,10 +6,9 @@
 #work to find where the functions are instead of reading the code line by line.
 #2. Which implementation is more readable and why?
 #A: The main function is smaller and more readable in the implementation with functions. But that is if you know what the functions do and these are very
-#spesific (not the best kind of functions) so if you want to read the code as a whole without knowing the rules of the project the implementation without functions
+#spesific (not the best kind of functions) so if you want to read the code as a whole without knowing the rules of the project, the implementation without functions
 #would probably be more readable.
-#3. Which problems in the first implementations were you able to solve with the latter
-#implementation? 
+#3. Which problems in the first implementations were you able to solve with the latter implementation? 
 #A: All.
 #The algorithm
 #1.  Player moves to some direction

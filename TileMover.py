@@ -32,15 +32,16 @@ while position != 31:
     elif validpos == "ns":
         print("You can travel: (N)orth or (S)outh.")
     direction = input("Direction: ")
-    while direction.lower() not in validpos:
+    direction = direction.lower()
+    while direction not in validpos:
         print("Not a valid direction!")
         direction = input("Direction: ")
-    if direction.lower() in validpos:
-        if direction.lower() == "n":
+    if direction in validpos:
+        if direction == "n":
             position += 1
-        elif direction.lower() == "s":
+        elif direction == "s":
             position -= 1
-        elif direction.lower() == "e":
+        elif direction == "e":
             position += 10
         else:
             position -= 10
